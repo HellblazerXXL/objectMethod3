@@ -6,3 +6,8 @@ let settings = {
     notification : true,
     battery : "empty"
 }
+Object.freeze(settings);
+settings.theme = "light"
+console.log(settings);
+
+console.log(Object.isFrozen(settings))
